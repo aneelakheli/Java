@@ -1,3 +1,5 @@
+package Variable;
+
 public class VariableExample {
     public static void main(String[] args) {
         int a = 70;
