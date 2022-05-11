@@ -18,6 +18,14 @@ public class IfElseCondition {
         } else {
             System.out.println("The city is Somewhere.");
         }
+
+        boolean isTrue = true;
+        if( isTrue =false){
+            System.out.println("The value is False");
+        }
+        else{
+            System.out.println("The value is True");
+        }
     }
 
 }
