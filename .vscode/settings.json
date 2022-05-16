@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "controlflow",
         "basic",
-        "controlflow"
+        ""
     ]
 }
