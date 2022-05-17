@@ -1,6 +1,6 @@
 public class SwitchExample {
     public static void main(String[] args) {
-        String days = "Monday";
+        String days = "Friday";
         int numDay = 0;
 
         switch (days) {
@@ -25,7 +25,7 @@ public class SwitchExample {
                 numDay = 7;
                 break;
             default:
-                System.out.println("Invalid Days name");
+                System.out.println("Invalid Day name");
         }
         System.out.println(numDay);
     }
