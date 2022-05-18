@@ -7,23 +7,18 @@ public class PetersonNumber {
         int sum = 0;
         int number = sc.nextInt();
         while (number > 0) {
-
             int factorial = 1;
             int num = number % 10;
-            System.out.println(num);
             for (int i = 1; i <= num; i++) {
                 factorial = i * factorial;
             }
             sum = sum + factorial;
-            System.out.println(sum);
             number = number / 10;
-
         }
         if (sum == number) {
             System.out.println("The given number is Peterson.");
         } else {
             System.out.println("The given number is not Peterson");
         }
-
     }
 }
