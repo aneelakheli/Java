@@ -16,5 +16,6 @@ when using this version of the _for_ statements, keep in mind that:
 
 The java _for_ loop is used to iterate a part of the program several times. IF the number of iteration is fixed, it is recommended to use for loop.
 
-**- Flowchart**
+# - Flowchart
+
 <img src ="forloop.jpg" alt="For loop flowchart" style="float: left; margin-right:40px;">
