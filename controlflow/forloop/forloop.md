@@ -8,6 +8,10 @@ The _for_ statements provides a compact a way to iterate over a range of values.
     }
 ```
 
+# - Flowchart
+
+<img src ="forloop.jpg" alt="For loop flowchart" style="float: left; margin-right:40px;">
+
 when using this version of the _for_ statements, keep in mind that:
 
 - The _initialization_ expression initializes the loop; it's executed once, as the loop begins.
@@ -16,6 +20,8 @@ when using this version of the _for_ statements, keep in mind that:
 
 The java _for_ loop is used to iterate a part of the program several times. IF the number of iteration is fixed, it is recommended to use for loop.
 
-# - Flowchart
+## Types of For Loop
 
-<img src ="forloop.jpg" alt="For loop flowchart" style="float: left; margin-right:40px;">
+- Simple For Loop
+- For Each or Enhanced for Loop
+- Labeled for Loop
