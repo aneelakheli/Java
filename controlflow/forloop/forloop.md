@@ -36,4 +36,4 @@ The _For_ statement also has anotherform designed for iteration through Collecti
     int[] numbers = {1,2,3,4,5,6,7,8,9,19};
 ```
 
-The program, [EnhancedForDemo], uses the enhanced _for_
+The program, [EnhancedForDemo](EnhancedForDemo), uses the enhanced _for_ to loop throught the array.
