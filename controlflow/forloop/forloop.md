@@ -25,3 +25,15 @@ The java _for_ loop is used to iterate a part of the program several times. IF t
 - Simple For Loop
 - For Each or Enhanced for Loop
 - Labeled for Loop
+
+**Java Nested For Loop**
+if we have a for loop inside the another loop, it is known as nested for loop. The inner loop executes completely whenever outer loop executes.
+[nestesforloop](NestedForLoop.java)
+
+The _For_ statement also has anotherform designed for iteration through Collection and arrays. This form is sometimes referred to as the **enhanced** for statement, and can be used to make your loops more compact and easy to read. TO demonstrate, consider the following array, which holds the numbers 1 through 10.
+
+```
+    int[] numbers = {1,2,3,4,5,6,7,8,9,19};
+```
+
+The program, [EnhancedForDemo], uses the enhanced _for_
