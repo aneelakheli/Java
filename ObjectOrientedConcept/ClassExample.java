@@ -1,6 +1,9 @@
 package ObjectOrientedConcept;
 
+import java.util.Scanner;
+
 class Box {
+
     double width;
     double height;
     double depth;
