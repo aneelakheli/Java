@@ -60,3 +60,18 @@ In general, class declarations can include these components, in order:
 3. The name of the class's parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
 4. A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
 5. The class body, surrounded by braces, {}.
+
+## Declaring Member Variables
+
+There are several kinds of variables:
+
+- Member variables in a class -- these are calleds _fields_
+- variables in a method or block of code -- these are called local variables.
+- variables in a method declarations -- these are called parameters.
+
+## Access Modifiers
+
+The first (left-most) modifier used lets you control what other classes have access to a member field. For the moment, consider only public and private. Other access modifiers will be discussed later.
+
+public modifier — the field is accessible from all classes.
+private modifier — the field is accessible only within its own class.
