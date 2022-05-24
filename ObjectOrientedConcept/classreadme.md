@@ -77,3 +77,24 @@ The first (left-most) modifier used lets you control what other classes have acc
 
 public modifier — the field is accessible from all classes.
 private modifier — the field is accessible only within its own class.
+
+### Providing Constructors for Your Classes
+
+A class contains constructors that are invoked to create objects from the class blueprint. Constructor declarations look like method declarations—except that they use the name of the class and have no return type. For example, in an example [Bicycle](Bicycle.java) has one constructor:
+
+```
+    public Bicycle(int startCadence, int startSpeed, int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+    }
+
+```
+
+To create a new _Bicycle_ object called _myBike_, a constructor is called by the new operator:
+
+```
+    Bicycle myBike = new Bicycle(30, 0, 8);
+```
+
+new Bicycle(30, 0, 8) creates space in memory for the object and initializes its fields.
