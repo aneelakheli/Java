@@ -51,8 +51,6 @@ The example class [Bicycle](Bicycle.java)
 
 means that MyClass is a subclass of MySuperClass and that it implements the YourInterface interface.
 
----
-
 In general, class declarations can include these components, in order:
 
 1. Modifiers such as public, private, and a number of others that you will encounter later. (However, note that the private modifier can only be applied to Nested Classes.)
@@ -61,7 +59,7 @@ In general, class declarations can include these components, in order:
 4. A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
 5. The class body, surrounded by braces, {}.
 
-In the example, **[MountainBike](MountainBike.java)** inherits all the fields and methods of **[Bicycle](Bicycle.java)** and adds the fields _seatHeight_ and a method to set it.
+In the example, _[MountainBike](MountainBike.java)_ inherits all the fields and methods of _[Bicycle](Bicycle.java)_ and adds the fields _seatHeight_ and a method to set it.
 
 ## Declaring Member Variables
 
