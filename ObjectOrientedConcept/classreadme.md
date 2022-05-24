@@ -61,6 +61,8 @@ In general, class declarations can include these components, in order:
 4. A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
 5. The class body, surrounded by braces, {}.
 
+In the example, **[MountainBike](MountainBike.java)** inherits all the fields and methods of **[Bicycle](Bicycle.java)** and adds the fields _seatHeight_ and a method to set it.
+
 ## Declaring Member Variables
 
 There are several kinds of variables:
