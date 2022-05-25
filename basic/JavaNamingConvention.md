@@ -11,20 +11,18 @@ All the classes, interfaces, packages, methods and fields of Java programming la
 By using standard java conventions, we make our code easier to read for ourself and other programmers. Readability of java program is very important. it indicates that less time is spent to figure out what code does.
 The following table shows the popular conventions used for the different identifiers
 
-|-------------------------------------------------------------|
-| Identifiers| Naming | Examples|
-| Types | Rules | |
-|-------------------------------------------------------------|
-|Class |- it should be start with the uppercase letter|public class Employee|
-| | - it should be Noun such as,Button, System, Thread, etc. |{|
-| | Use appropriate words, instead of acronyms.| //code snippet|
-| | |}|
-|---|------------------------------------------|----------------|  
-| ||
-| | |
-| |
-| |
-| |
+| Identifiers | Naming | Examples |
+| Types | Rule | |
+|:--- | :----: | --: |  
+|Class |- it should be start with the uppercase letter| public class**Employee**|
+| |- it should be Noun such as,Button, System, | { |  
+| | Thread, etc. | // code snippet |
+| | Use appropriate words, instead of acronyms. | } |
+| --- | --- | --- | | |It should start with the uppercase letter |interface **Printable** |
+| Interface |It should be an adjective such as Runnable, |{ |
+| |Remote, ActionListener. | // code snippet |
+| |Use appropriate words, instead of acronyms. | } |
+| --- |--- | --- |
 | |
 | |
 | |
