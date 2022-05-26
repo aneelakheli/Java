@@ -78,3 +78,48 @@ You can use any data type for a parameter of a method or a constructor. This inc
     // method body goes here
 }
 ```
+
+## Arbitrary Number of Arguments
+
+You can use a construct called _varargs_ to pass an arbitrary number of values to a method. You use varargs when you don't know how many of a particular type of argument will be passed to the method. It's a shortcut to creating an array manually (the previous method could have used varargs rather than an array).
+
+To use **varargs**, you follow the type of the last parameter by an **ellipsis** (three dots, ...), then a space, and the parameter name. The method can then be called with any number of that parameter, including none
+
+```java
+public Polygon polygonFrom(Point... corners) {
+    int numberOfSides = corners.length;
+    double squareOfSide1, lengthOfSide1;
+    squareOfSide1 = (corners[1].x - corners[0].x)
+                     * (corners[1].x - corners[0].x)
+                     + (corners[1].y - corners[0].y)
+                     * (corners[1].y - corners[0].y);
+    lengthOfSide1 = Math.sqrt(squareOfSide1);
+
+    // more method body code follows that creates and returns a
+    // polygon connecting the Points
+}
+```
+
+You can see that, inside the method, corners is treated like an array. The method can be called either with an array or with a sequence of arguments. The code in the method body will treat the parameter as an array in either case.
+
+You will most commonly see varargs with the printing methods; for example, this printf method:
+
+```java
+public PrintStream printf(String format, Object... args)
+```
+
+allows you to print an arbitrary number of objects. It can be called like this:
+
+```java
+System.out.printf("%s: %d, %s%n", name, idnum, address);
+
+```
+
+or like this
+
+```java
+System.out.printf("%s: %d, %s, %s, %s%n", name, idnum, address, phone, email);
+
+```
+
+or with yet a different number of arguments.
