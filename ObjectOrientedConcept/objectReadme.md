@@ -2,6 +2,24 @@
 
 Object are created in java for invoking the methods. Through these object interactions, a program can carry out various tasks, such as implementing a GUI, running an animation, or sending and receiving information over a network. Once an object has completed the work for which it was created, its resources are recycled for use by other objects.
 
+## Creating Objects
+
+As you know, a class provides the blueprint for objects; you create an object from a class. Each of the following statements taken from the below program creates an object an and assigns it to a variable:
+
+```java
+        Point originOne = new Point(23, 94);
+        Rectangle rectOne = new Rectangle(originOne, 100, 200);
+        Rectangle rectTwo = new Rectangle(50, 100);
+```
+
+The first line creates an _object_ of the Point class, and the second and third lines each create an _object_ of the Rectangle class.
+
+Each of these statements has three parts (discussed in detail below):
+
+1. **Declaration**: The code set in bold are all variable declarations that associate a variable name with an object type.
+2. **Instantiation**: The new keyword is a Java operator that creates the object.
+3. **Initialization**: The new operator is followed by a call to a constructor, which initializes the new object.
+
 **3 Ways to initialize object**
 There are 3 ways to initialize object in Java.
 
