@@ -72,3 +72,26 @@ This program creates, manipulates, and displays information about various object
 ```
 
 The following three sections use the above example to describe the life cycle of an object within a program. From them, you will learn how to write code that creates and uses objects in your own programs. You will also learn how the system cleans up after an object when its life has ended.
+
+## Java Static Keyword
+
+The _static_ keyword in java is used for memory management mainly. we can apply static keyword with variables, methods, blocks and nested classes. The static keyword belongs to the class than an instance of the class. The static keyword is used for a constant variable or a method that is the same for every instance of a class.
+The static can be:
+
+1. Variable( also known as class variable)
+2. Method (also known as class method)
+3. Block
+4. Nested class
+
+### Java static variable
+
+If you declare any variable as static, it is known as a static variable. The static variable can be used to refer to the common property of all objects (which is not unique for each object), for example, the company name of employees, college name of students, etc.
+The static variable gets memory only once in the class area at the time of class loading.
+
+**Advantages of static variable**
+
+- It makes your program **memory efficient** (i.e., it saves memory).
+
+Note: To create static member(block, variable, method nested class), precede its declaration with the keyword static.
+
+java static property is shared to all objects.
