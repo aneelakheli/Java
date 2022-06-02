@@ -98,3 +98,8 @@ java static property is shared to all objects.
 
 **When to used static variable and method?**
 Use the static variable for the property that is common to all objects.
+
+**Static Classes**
+
+A Class can be made **static** only if it is a nested class. We cannot declare a top-level class with a static modifier but can declare nested classes as static. Such types of classes are called Nested static classes..
+Nested static class doesn't need a reference of outer class.
