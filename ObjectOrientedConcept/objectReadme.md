@@ -95,3 +95,6 @@ The static variable gets memory only once in the class area at the time of class
 Note: To create static member(block, variable, method nested class), precede its declaration with the keyword static.
 
 java static property is shared to all objects.
+
+**When to used static variable and method?**
+Use the static variable for the property that is common to all objects.
