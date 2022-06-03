@@ -10,3 +10,7 @@ here is given the 6 usage of java this keyword:
 4. this can be passed as an argument in the method call.
 5. this can be passed as an argument in the constructor call
 6. this can be usd to return the current class instance from the method.
+
+**This : to Invoke current class Method**
+
+we may invoke the method of the current class by using the this keyword. if we don't use the this keyword, compiler automatically adds this keyword while invoking the method .
