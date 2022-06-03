@@ -2,9 +2,9 @@ package ObjectOrientedConcept.StaticExample;
 
 public class StaticVaribleExample2 {
     String details;
-    int rollNo = 90;
-    String name = " arya";
-    static String college = "birendra aadarsha";
+    int rollNo;
+    String name;
+    static String college = "College ";
 
     public void getInformation(int rollNo, String name) {
         this.rollNo = rollNo;
@@ -18,8 +18,9 @@ public class StaticVaribleExample2 {
     public static void main(String[] args) {
         StaticVaribleExample2 sv1 = new StaticVaribleExample2();
         StaticVaribleExample2 sv2 = new StaticVaribleExample2();
-        sv1.getInformation(10, "Aneel");
-        String info = sv1.setInformation();
-        System.out.println(info);
+        sv1.getInformation(10, "ABC");
+        sv2.getInformation(11, "DEF");
+        System.out.println(sv1.setInformation());
+        System.out.println(sv2.setInformation());
     }
 }
