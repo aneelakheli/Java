@@ -14,6 +14,7 @@ public class ThisMethodExe {
         b = 90;
     }
 
+    // method that receives "this " keyword as parameters
     int display(ThisMethodExe obj) {
         int sum = a + b;
         return sum;
