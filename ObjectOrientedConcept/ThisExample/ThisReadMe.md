@@ -29,7 +29,7 @@ We can return this keyword as an statement from the method. In such case, return
 
 ```java
     return_type method_name(){
-        __return this;__
+        return this;
     }
 ```
 
