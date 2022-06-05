@@ -63,3 +63,8 @@ The this() constructor call should be used to reuse the constructor from the con
         }}
 
 ```
+
+**RULE:** Call to this() must be the first statement in constructor.
+
+Application of thid that can be passed as an argument:
+In event handling (or) in a situation where we have to provide reference of a class to another one. it is used to reuse one object in many methods.
