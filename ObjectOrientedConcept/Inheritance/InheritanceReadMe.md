@@ -29,3 +29,7 @@ The keyword used for inheritance is **_extends_**.
 The **extends** keyword indicates that you are making a new class that derives from an existing class. The meaning of **extends** is to increase the functionality.
 
 `` **NOTE**: Multiple inheritance is not supported in java through class.
+
+**Aggregation in java**
+
+If a class have an entity reference, it is known as Aggregation. Aggregation represents **HAS-A** relationship.
