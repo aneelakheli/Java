@@ -33,3 +33,12 @@ The **extends** keyword indicates that you are making a new class that derives f
 **Aggregation in java**
 
 If a class have an entity reference, it is known as Aggregation. Aggregation represents **HAS-A** relationship.
+
+**Why use aggregation?**
+
+- For Code Reusability.
+
+**When use aggregation?**
+
+- Code reuse is also best achieved by aggregation when there is not is-a relationship.
+- Inheritance should be used only if the relationship is-a is maintained throughtout the lifetime of the objects involved; otherwise, aggregation is the best choice.
