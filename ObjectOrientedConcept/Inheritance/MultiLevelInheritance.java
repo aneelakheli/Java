@@ -1,5 +1,11 @@
+/* 
+ * java program to illustrate the concept of 
+ * multilevel inheritance
+ */
+
 package ObjectOrientedConcept.Inheritance;
 
+//Derived class
 public class MultiLevelInheritance {
     public static void main(String[] args) {
         three p = new three();
