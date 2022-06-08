@@ -41,12 +41,22 @@ The covariant return type specifies that the return type may vary in the same di
 
 Before Java5, it was not possible to override any method by changing the return type. But now, since Java5, it is possible to override method by changing the return type if subclass overrides any method whose return type is Non-Primitive but it changes its return type to subclass type.
 
-## Super Keyword in Java
+## Final Keyword In Java
 
-The super keyword in Java is a reference variable which is used to refer immediate parent class object. Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by super reference variable.
+The final keyword in java is used to restrict the user. The java final keyword can be used in many context.
+Final can be:
 
-**Usage of Java Super Keyword**
+1. variable
+2. method
+3. class
 
-1. super can be used to refer immediate parent class instance variable.
-2. super can be used to invoke immediate parent class method.
-3. super() can be used to invoke immediate parent class constructor.
+The final keyword can be applied with the variables, a final variable that have novalue it is called blank final variable or uninitialized final variable. It can be initialized in the constructor only. The blank final variable can be static also which will be initialized in the static block only. We will have detailed learning of these. Let's first learn the basics of final keyword.
+
+4. Java Final Variable
+   If you make any variable as final, you cannot change the value of final variable(it will be constant).
+
+**Things to Remember**:
+
+- If we make any method as final, we cannot override it.
+- If we make any class as final, we cannot extend it.
+- final method is inherited but we cannot override it.
