@@ -20,3 +20,10 @@ Abstraction can be achieved with either abstract classes or interfaces. In java,
 ###### **When to use abstract classes and abstract methods with an example**
 
 There are situations in which we will want to define a superclass that declares the structure of a given abstraction without providing a complete implementation of every method. Sometimes we will want to create a superclass that only defines a generalization form that will be shared by all of its subclasses, leaving it to each subclass to fill in the details.
+
+### **Encapsulation vs Data Abstraction**
+
+Encapsulation is data hiding(information hiding) while Abstraction is detailed hiding(implementation hiding).
+While encapsulation groups together data and methods that act upon the data, data abstraction deal with exposing the interface to the user and hiding the details of implementation.
+Encapsulated classes are java classes that follow data hiding and abstraction while We can implement abstraction by using abstract classes and interfaces.
+Encapsulation is a procedure that takes place at the implementation level, while abstraction is a design-level process.
