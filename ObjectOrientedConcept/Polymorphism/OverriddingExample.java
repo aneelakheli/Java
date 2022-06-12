@@ -7,7 +7,7 @@ public class OverriddingExample {
         Animal deer = new Herbivores();
         deer.eat();
         Animal tiger = new carnivores();
-        deer.eat();
+        tiger.eat();
 
     }
 }
