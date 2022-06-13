@@ -3,7 +3,7 @@
  * multilevel inheritance
  */
 
-package src.Inheritance;
+package ObjectOrientedConcept.Inheritance;
 
 //Derived class
 public class MultiLevelInheritance {
