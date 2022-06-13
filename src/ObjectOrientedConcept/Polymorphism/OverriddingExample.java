@@ -1,4 +1,3 @@
-package src.ObjectOrientedConcept.Polymorphism;
 
 public class OverriddingExample {
     public static void main(String[] args) {

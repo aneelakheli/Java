@@ -1,4 +1,3 @@
-package src.ObjectOrientedConcept.Polymorphism;
 
 class Person {
     void message() {

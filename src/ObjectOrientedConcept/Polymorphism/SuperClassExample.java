@@ -1,5 +1,4 @@
 // use of super with variables
-package src.ObjectOrientedConcept.Polymorphism;
 
 class Bike {
     String color = "white";

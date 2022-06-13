@@ -1,4 +1,4 @@
-package src.ObjectOrientedConcept.Polymorphism.instanceOf;
+package instanceOf;
 
 public class InstanceOfExample {
     public static void main(String args[]) {

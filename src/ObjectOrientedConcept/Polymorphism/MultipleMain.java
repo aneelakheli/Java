@@ -1,4 +1,3 @@
-package src.ObjectOrientedConcept.Polymorphism;
 
 public class MultipleMain {
     public static void main(String[] args) {
