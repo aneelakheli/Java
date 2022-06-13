@@ -1,4 +1,3 @@
-package ObjectOrientedConcept.Encapsulation;
 
 class EncapsulationExample {
 	int num1 = 8;

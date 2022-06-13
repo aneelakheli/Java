@@ -1,7 +1,6 @@
 /* 
  * java program to illustrate method overloading
  */
-package src.ObjectOrientedConcept.Polymorphism;
 
 public class MethodOverloading {
     public static void main(String[] args) {

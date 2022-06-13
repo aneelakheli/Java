@@ -2,8 +2,6 @@
 java program to explain about IS-A inheritance
 */
 
-package src.Inheritance;
-
 public class IsAInheritance extends ExtendsClass {
     String subName = "sub  class ";
 

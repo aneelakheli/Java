@@ -1,4 +1,3 @@
-package src.ObjectOrientedConcept.Polymorphism;
 
 class Role {
     boolean iSPermission = false;

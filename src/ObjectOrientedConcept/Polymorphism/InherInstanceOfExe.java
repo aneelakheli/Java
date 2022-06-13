@@ -1,4 +1,3 @@
-package ObjectOrientedConcept.Polymorphism.instanceOf;
 
 class InheritanceInstanceOfExericise {
 
