@@ -70,3 +70,13 @@ In a situation where the size of the array and variables of the array are alread
 
 - The length of this array determines the length of the created array.
 - There is no need to write the new int[] part in the latest versions of java.
+
+                              __Multidimensional Arrays:__
+
+  Multidimensional arrays are arrays of arrays with each element of the array holding the reference of other arrays. These are also known as Jagged Arrays. A multidimensional array is created by appending one set of square brackets ([]) per dimension.
+
+  ```java
+    int[][] intArray = new int[10][10]; // a 2D array or matrix.
+    int[][][] intArray = new int[10][10][10]; // a 3D array
+
+  ```
