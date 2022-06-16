@@ -39,3 +39,7 @@ Java is an object-oriented programming language, so we need to deal with objects
 The automatic conversion of primitive data type into its corresponding wrapper class is known as autoboxing, for example, byte to Byte, char to Character, int to Integer, long to Long, float to Float, boolean to Boolean, double to Double, and short to Short.
 
 Since Java 5, we do not need to use the valueOf() method of wrapper classes to convert the primitive into objects.
+
+**Unboxing**
+The automatic conversion of wrapper type into its corresponding primitive type is known as unboxing. It is the reverse process of autoboxing.
+Since Java 5, we do not need to use the intValue() method of wrapper classes to convert the wrapper type into primitives
