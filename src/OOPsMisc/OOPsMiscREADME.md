@@ -43,3 +43,17 @@ Since Java 5, we do not need to use the valueOf() method of wrapper classes to c
 **Unboxing**
 The automatic conversion of wrapper type into its corresponding primitive type is known as unboxing. It is the reverse process of autoboxing.
 Since Java 5, we do not need to use the intValue() method of wrapper classes to convert the wrapper type into primitives
+
+### Recursion
+
+Recursion in java is a process in which a method calls itself continuously. A method in java that calls itself is called recursive method.
+It makes the code compact but complex to understand.
+
+Syntax:
+
+```
+returntype methodname(){
+//code to be executed
+methodname();//calling same method
+}
+```
