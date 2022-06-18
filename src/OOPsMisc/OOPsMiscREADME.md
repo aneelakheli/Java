@@ -61,3 +61,7 @@ methodname();//calling same method
 ## Call by value and Call by Reference
 
 There is only call by value in java, not call by Reference. if we call a method passing a value, it is known as call by value. The changes being done in the called method, is not affected in the calling method.
+
+In case of call by reference original value is changed if we made changes in the called method. if we pass object in place of any primitive value, original value will be changed.
+
+Java uses only call by value while passing reference variables as well. It creates a copy of references and passes them as valuable to the methods. As reference points to same address of object, creating a copy of reference is of no harm. But if new object is assigned to reference it will not be reflected.
