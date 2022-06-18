@@ -57,3 +57,7 @@ returntype methodname(){
 methodname();//calling same method
 }
 ```
+
+## Call by value and Call by Reference
+
+There is only call by value in java, not call by Reference. if we call a method passing a value, it is known as call by value. The changes being done in the called method, is not affected in the calling method.
