@@ -65,3 +65,32 @@ There is only call by value in java, not call by Reference. if we call a method 
 In case of call by reference original value is changed if we made changes in the called method. if we pass object in place of any primitive value, original value will be changed.
 
 Java uses only call by value while passing reference variables as well. It creates a copy of references and passes them as valuable to the methods. As reference points to same address of object, creating a copy of reference is of no harm. But if new object is assigned to reference it will not be reflected.
+
+## Java Strictfp Keyword
+
+Java strictfp keyword ensures that you will get the same result on every platform if you perform operations in the floating-point variable. The precision may differ from platform to platform that is why java programming language have provided the strictfp keyword, so that you get same result on every platform. So, now you have better control over the floating-point arithmetic.
+
+The strictfp keyword can be applied on methods, classes and interfaces.
+
+```java
+    strictfp class A{}//strictfp applied on class
+    strictfp interface M{}//strictfp applied on interface
+    class A{
+    strictfp void m(){}//strictfp applied on method
+    }
+```
+
+**illegal strictfp**
+The strictfp keyword cannot be applied on abstract methods, variables or constructors.
+
+```java
+    class B{
+    strictfp abstract void m();//Illegal combination of modifiers
+    }
+    class B{
+    strictfp int data=10;//modifier strictfp not allowed here
+    }
+    class B{
+    strictfp B(){}//modifier strictfp not allowed here
+    }
+```
