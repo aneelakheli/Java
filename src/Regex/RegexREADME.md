@@ -23,6 +23,31 @@ syntax
 **Parameters**: This method accepts one single parameter regex which represents the given regular expression compiled into a pattern.
 **Return Value**: This method returns the pattern compiled from the regex passed to the method as a parameter.
 
+**split(CharSequence)**
+split(CharSequence) method of a Pattern class used to splits the given char sequence passed as parameter to method around matches of this pattern.This method can split charSequence into an array of String’s, using the regular expression used to compile the pattern as a delimiter.so we can say that the method returns the array of strings computed by splitting the input around matches of this pattern.
+
+```java
+public String[] split(CharSequence input)
+```
+__Parameters:__ This method accepts a single parameter input which represents character sequence to be split.
+
+__Return value:__ This method returns the array of strings computed by splitting the input around matches of this pattern.
+
+__quote(String)__
+quote(String) method of a Pattern class used to returns a literal pattern String for the specified String passed as parameter to method.This method produces a String equivalent to **"s"** that can be used to create a Pattern. Metacharacters or escape sequences in the input sequence will be given no special meaning. If you compile the value returned by the quote method, you’ll get a Pattern which matches the literal string that you passed as a parameter to method.\Q and \E mark the beginning and end of the quoted part of the string.
+
+Syntax
+```java
+public static String quote(String s)
+```
+
+**Parameters:** This method accepts a single parameter s which represents the string to be literalized.
+
+**Return value:** This method returns a literal string replacement for String s.
+
+
+
+
 
 
 ## Matcher Class:
