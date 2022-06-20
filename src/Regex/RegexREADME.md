@@ -2,7 +2,7 @@
 
 A Java regular expression, or Java regex, is a sequence of characters that specifies a pattern which can be searched or manipulating strings/text. A regex defines a set of strings, usually united for a given purpose.
 A regular expression can be a single character, or a more complicated pattern.
-It is widely used to define the constraint on strings such as password and email validation. Regular Expressions are provided under java.util.regex package. This consists of 3 classes and 1 interface.
+It is widely used to define the constraint on strings such as password and email validation. Regular Expressions are provided under __java.util.regex__ package. This consists of 3 classes and 1 interface.
 Java does not have a built-in Regular Expression class, but we can import the java.util.regex package to work with regular expressions. The package includes the following classes:
 
 - __Pattern Class__ - Defines a pattern (to be used in a search).
@@ -48,4 +48,28 @@ public static String quote(String s)
 ## Matcher Class:
 Matcher class implements the MatchResult interface. It is a regex engine which is used to perform match operations on a character sequence. This too defines no public constructors. This can be implemented by invoking a matcher() on any pattern object.
 
+**appendReplacement(StringBuffer, String):**
+The appendReplacement(StringBuffer, String) method of Matcher class behaves as a appen-and-replace method. This method reads the input string and replace it with the matched pattern in the matcher string.
+
+Syntax:
+```java 
+public Matcher appendReplacement(StringBuffer buffer, String stringToBeReplaced)
+```
+Parameters: This method take two parametes:
+- buffer: which is the StringBuffer that stores the target string.
+- stringToBeReplaced: which is the string to be replaced in the matcher.
+
+**Matcher find()**
+the find() method of matcher class attempts to find the next subsequence of the input sequence that find the pattern. it returns a booleans value showing the same.
+
+Syntax:
+```java
+    public boolean find()
+```
+**Parameters:** This method do not takes any parameter.
+**Return Value** This method returns a **boolean value** showing whether a subsequence of the input sequence find this matcher's pattern.
+
 **Note**: _T Pattern.matches() checks if the whole text matches with a pattern or not. Other methods (demonstrated below) are mainly used to find multiple occurrences of patterns in the text._
+
+**PatternSyntaxException Class**
+This is an object of Regex which is used to indicate a syntax error in a regular expression pattern and is a unchecked exception. 
