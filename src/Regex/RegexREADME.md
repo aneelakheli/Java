@@ -2,12 +2,12 @@
 
 A Java regular expression, or Java regex, is a sequence of characters that specifies a pattern which can be searched or manipulating strings/text. A regex defines a set of strings, usually united for a given purpose.
 A regular expression can be a single character, or a more complicated pattern.
-It is widely used to define the constraint on strings such as password and email validation.
+It is widely used to define the constraint on strings such as password and email validation. Regular Expressions are provided under java.util.regex package. This consists of 3 classes and 1 interface.
 Java does not have a built-in Regular Expression class, but we can import the java.util.regex package to work with regular expressions. The package includes the following classes:
 
-- Pattern Class - Defines a pattern (to be used in a search).
-- Matcher Class - Used to search for the pattern. An engine that performs match operations on a character sequence by interpreting a Pattern.
-- PatternSyntaxException Class - Indicates syntax error in a regular expression pattern.
+- __Pattern Class__ - Defines a pattern (to be used in a search).
+- __Matcher Class__ - Used to search for the pattern. An engine that performs match operations on a character sequence by interpreting a Pattern.
+- __PatternSyntaxException Class__ - Indicates syntax error in a regular expression pattern.
 
 ## Pattern Class:
 This class is a compilation of regular expressions that can be used to define various types of patterns, providing no public constructors. This can be created by invoking the compile() method which accepts a regular expression as the first argument, thus returns a pattern after execution.
@@ -45,10 +45,7 @@ public static String quote(String s)
 
 **Return value:** This method returns a literal string replacement for String s.
 
-
-
-
-
-
 ## Matcher Class:
-Matcher class implements the MatchResult interface. It is a regex engine which is used to perform match operations on a character sequence.
+Matcher class implements the MatchResult interface. It is a regex engine which is used to perform match operations on a character sequence. This too defines no public constructors. This can be implemented by invoking a matcher() on any pattern object.
+
+**Note**: _T Pattern.matches() checks if the whole text matches with a pattern or not. Other methods (demonstrated below) are mainly used to find multiple occurrences of patterns in the text._
