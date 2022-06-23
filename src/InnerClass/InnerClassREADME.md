@@ -35,3 +35,7 @@ If all the class objects are a part of the outer object then it is easier to nes
 ## Nested Classes
 
 Nested classes are divided into two categories: _non-static_ and _static_. Non-static nested classes are called inner classes. Nested classes that are declared static are called static nested classes.
+
+## Shadowing
+
+If a declaration of a type (such as a member variable or a parameter name) in a particular scope(such as an inner class or a method definition) has the same name as another declaration in the enclosing scope, then the declaration shadows the declaration of the enclosing scope. You cannot refers to a shadowed declaration by its name alone. 
