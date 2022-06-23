@@ -39,3 +39,9 @@ Nested classes are divided into two categories: _non-static_ and _static_. Non-s
 ## Shadowing
 
 If a declaration of a type (such as a member variable or a parameter name) in a particular scope(such as an inner class or a method definition) has the same name as another declaration in the enclosing scope, then the declaration shadows the declaration of the enclosing scope. You cannot refers to a shadowed declaration by its name alone. 
+
+## Local Classes
+Local classes are classes that are defined in a block, which is a group of zero or more statements between balanced braces. we typically find local classes defined in the body of a method
+
+**Declaring Local Classes**
+we can define a local class inside any block. for example, we can define a local class in a method body, a _for_ loop, or an _if_ clause.
