@@ -26,7 +26,7 @@ public class HelloWorldAnonymousClass{
             }
         };
         englishGreeting.greet();
-        englishGreeting.greetSomeone("ramu kaka");
+        frenchGreeting.greetSomeone("ramu kaka");
     }
     public static void main(String[] args) {
         HelloWorldAnonymousClass myapp = new HelloWorldAnonymousClass();
