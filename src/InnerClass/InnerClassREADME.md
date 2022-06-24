@@ -53,11 +53,28 @@ Anonymous classes enable you to make our code more concise. They enable our clas
 
 The anonymous class expression consists of the following:
 
-The __new__ operator
-The name of an interface to implement or a class to extend. In [this](./HelloWorldAnonymousClass.java) example, the anonymous class is implementing the interface HelloWorld.
-
-Parentheses that contain the arguments to a constructor, just like a normal class instance creation expression. Note: When you implement an interface, there is no constructor, so you use an empty pair of parentheses, as in this example.
-
-A body, which is a class declaration body. More specifically, in the body, method declarations are allowed but statements are not.
+1. The __new__ operator
+2. The name of an interface to implement or a class to extend. In [this](./HelloWorldAnonymousClass.java) example, the anonymous class is implementing the _interface_ HelloWorld.
+3. Parentheses that contain the arguments to a constructor, just like a normal class instance creation expression. **Note:** When implement an interface, there is no constructor, so use an empty pair of parentheses, as in this example.
+4. A body, which is a class declaration body. More specifically, in the body, method declarations are allowed but statements are not.
 
 Because an anonymous class definition is an expression, it must be part of a statement. In this example, the anonymous class expression is part of the statement that instantiates the frenchGreeting object. (This explains why there is a semicolon after the closing brace.)
+
+**Accessing Local Variables of the Enclosing Scope, and Declaring and Accessing Members of the Anonymous Class**
+
+Like local classes, anonymous classes can capture variables; they have the same access to local variables of the enclosing scope:
+
+- An anonymous class has access to the members of its enclosing class.
+- An anonymous class cannot access local variables in its enclosing scope that are not declared as final or effectively final.
+- Like a nested class, a declaration of a type (such as a variable) in an anonymous class shadows any other declarations in the enclosing scope that have the same name. See Shadowing for more information.
+Anonymous classes also have the same restrictions as local classes with respect to their members:
+- You cannot declare static initializers or member interfaces in an anonymous class.
+- An anonymous class can have static members provided that they are constant variables.
+
+Note that you can declare the following in anonymous classes:
+
+- Fields
+- Extra methods (even if they do not implement any methods of the supertype)
+- Instance initializers
+- Local classes
+- However, you cannot declare constructors in an anonymous class.
