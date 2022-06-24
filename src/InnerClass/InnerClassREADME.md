@@ -45,3 +45,19 @@ Local classes are classes that are defined in a block, which is a group of zero 
 
 **Declaring Local Classes**
 we can define a local class inside any block. for example, we can define a local class in a method body, a _for_ loop, or an _if_ clause.
+
+
+## Anonymous Classes
+
+Anonymous classes enable you to make our code more concise. They enable our classes to declare and instantiate a class at the same time. They are like local classes except that they do not have a name. Use them if we need to use a local class only once.
+
+The anonymous class expression consists of the following:
+
+The __new__ operator
+The name of an interface to implement or a class to extend. In [this](./HelloWorldAnonymousClass.java) example, the anonymous class is implementing the interface HelloWorld.
+
+Parentheses that contain the arguments to a constructor, just like a normal class instance creation expression. Note: When you implement an interface, there is no constructor, so you use an empty pair of parentheses, as in this example.
+
+A body, which is a class declaration body. More specifically, in the body, method declarations are allowed but statements are not.
+
+Because an anonymous class definition is an expression, it must be part of a statement. In this example, the anonymous class expression is part of the statement that instantiates the frenchGreeting object. (This explains why there is a semicolon after the closing brace.)
