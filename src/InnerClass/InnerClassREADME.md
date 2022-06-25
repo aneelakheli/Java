@@ -78,3 +78,25 @@ Note that you can declare the following in anonymous classes:
 - Instance initializers
 - Local classes
 - However, you cannot declare constructors in an anonymous class.
+
+## Lambda Expression
+One isssues with anonymous classes is that if the implementation of our anonymous class is very simple, such as an interface that contains only one method, then the syntax of anonymous classes may seem unwidely and unclear. in these cases, we're usually trying to pass functionality as an argument to another method, such as what action should be taken when someone clicks a button. lambda empressions enable our code to do this, to treat functionality as method argument, or code as data.
+Anonymous class, shows how to implement a base class without giving it a name. Although this is often more concise than a named classes with only one method, even an anonymous class seems a bit excessive and cubersome. Lambda expressions let you express instances of single-method classes more compactly. 
+**Lambda expression** is a short block of code which takes in parameters and returns a value. Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
+
+**Syntax:**
+The simplest lambda expression contains a single parameters and an expression:
+```
+    parameter -> expression
+```
+To use more than one parameter, wrap them in parentheses:
+__Syntax:__
+```
+    (parameter1, parameter2) -> expression
+```
+expressions are limited. They have to immediately return a value, and they cannot contain variables, assignments or statements such as __if__ or __for__. in order to do more complex operations, a code block can be used with curly braces. if the lambda expression needs to return a value, then the code block should have a __return__ statements.
+__Syntax:__
+```
+    (parameter1, parameter2)->{ code block }
+```
+
