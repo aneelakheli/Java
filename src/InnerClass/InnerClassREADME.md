@@ -100,3 +100,36 @@ __Syntax:__
     (parameter1, parameter2)->{ code block }
 ```
 
+## Method References
+We use Lambda Expression to create anonymous methods. Sometimes, however, a lambda expression does nothing but call an existing method. in those cases, it's often clearer to refer to the existing method by name. Method references enables us to do this, they are compact, easy-to-read lambda expressions for methods that already have a name.
+
+### Kinds of Method References
+There are four kinds of method references:
+
+1. **Reference to a static method**
+  Syntax: 
+```java
+       ContainingClass :: staticMethodName
+       Person::compareByAge
+       MethodReferenceExamples::appendStrings
+ ```
+2. **Reference to an instance method of a particular object**
+Syntax
+```Java
+    ContainingObject:: instanceMethodName
+    myComparisonProvider::compareByName
+    myApp:: appendStrings2
+```
+3. **Reference to an instance method of an arbitrary object of a particular type**
+Syntax:
+```
+    ContainingType::methodName	
+    String::compareToIgnoreCase
+    String::concat
+
+```
+4. **Reference to a constructor**
+```java
+	ClassName::new
+    HashSet::new
+```
