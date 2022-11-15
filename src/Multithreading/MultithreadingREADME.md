@@ -2,10 +2,6 @@
 
 **J**ava is a **multi-threaded** programming language which means we can develop multi-threaded program using Java. A multi-threaded program contains two or more parts that can run concurrently and each part can handle a different task at the same time making optimal use of the available resources specially when your computer has multiple CPUs.
 **_Multithreading_** refers to a process of executing two or more threads simultaneously for maximum utilization of the CPU. A _thread_ in Java is a lightweight process requiring fewer resources to create and share the process resources.
-Threads can be created by using two mechanisms :
-
-1. Extending the Thread class.
-2. Implementing the Runnable Interface.
 
 ## What is Thread??
 
@@ -44,3 +40,41 @@ Whenever a new thread is created, it is always in the new state. For a thread in
 **_Terminated_**: A thread reaches the termination state because of the following reasons:
 When a thread has finished its job, then it exists or terminates normally.
 Abnormal termination: It occurs when some unusual events such as an unhandled exception or segmentation fault.
+
+**Threads** can be created by using two mechanisms :
+
+1. Extending the Thread class.
+2. Implementing the Runnable Interface.
+
+**Thread** creation by extending the thread class:
+
+```java
+class MultithreadingDemo extends Thread {
+    public void run(){
+        try
+            {
+            // Displaying the thread that is running
+            System.out.println(
+            "Thread " + Thread.currentThread().getId() + " is running");
+            }
+        catch (Exception e) {
+            // Throwing an exception
+            System.out.println("Exception is caught");
+            }
+
+    }
+}
+       // Main Class
+public class Multithread {
+    public static void main(String[] args)
+        {
+        int n = 8; // Number of threads
+        for (int i = 0; i < n; i++) {
+        MultithreadingDemo object
+        = new MultithreadingDemo();
+        object.start();
+        }
+    }
+}
+
+```
