@@ -46,35 +46,8 @@ Abnormal termination: It occurs when some unusual events such as an unhandled ex
 1. Extending the Thread class.
 2. Implementing the Runnable Interface.
 
-**Thread** creation by extending the thread class:
+Thread Class vs Runnable Interface
 
-```java
-class MultithreadingDemo extends Thread {
-    public void run(){
-        try
-            {
-            // Displaying the thread that is running
-            System.out.println(
-            "Thread " + Thread.currentThread().getId() + " is running");
-            }
-        catch (Exception e) {
-            // Throwing an exception
-            System.out.println("Exception is caught");
-            }
-
-    }
-}
-       // Main Class
-public class Multithread {
-    public static void main(String[] args)
-        {
-        int n = 8; // Number of threads
-        for (int i = 0; i < n; i++) {
-        MultithreadingDemo object
-        = new MultithreadingDemo();
-        object.start();
-        }
-    }
-}
-
-```
+1. if we extend the Thread class, our class cannot extend any other class because Java doesn't support multiple inheritance. But, if we implement the Runnable Interface , our class can still extend other base classes.
+2. We can achieve basic functionality of thread by extending Thread class because it provides some inbuilt methods like yields() interrupt() etc. that are not available in Runnable interface.
+3. Using runnable will give you an object that can be shared amongst multiple threads.
