@@ -24,7 +24,7 @@ class ThreadJoin extends Thread
 }  
 public class ThreadJoinTime
     {  
-    public static void main (String argvs[])  
+    public static void main (String args[])  
         {  
         
         // creating 3 threads  
@@ -40,7 +40,7 @@ public class ThreadJoinTime
             System.out.println("The current thread name is: "+ Thread.currentThread().getName());  
             
             // invoking the join() method  
-            th1.join();  
+            // th1.join();  
         }  
   
         // catch block for catching the raised exception  
@@ -49,23 +49,30 @@ public class ThreadJoinTime
         System.out.println("The exception has been caught " + e);  
         }  
   
-// thread th2 starts  
+        // thread th2 starts  
         th2.start();  
         
         // starting the th3 thread after when the thread th2 has ended or died.  
         try  
         {  
             System.out.println("The current thread name is: " + Thread.currentThread().getName());  
-            th2.join();  
+            // th2.join();  
         }  
         
         // catch block for catching the raised exception  
         catch(Exception e)  
         {  
-         System.out.println("The exception has been caught " + e);  
+            System.out.println("The exception has been caught " + e);  
         }  
         
         // thread th3 starts  
         th3.start();  
-        }  
+        th1.setPriority(6);  
+        th2.setPriority(3);  
+        th3.setPriority(9);  
+        
+        System.out.println("Priority of the thread th1 is : " + th1.getPriority());  
+        System.out.println("Priority of the thread th2 is : " + th2.getPriority());    
+        System.out.println("Priority of the thread th3 is : " + th3.getPriority());  
+    }  
 }  
