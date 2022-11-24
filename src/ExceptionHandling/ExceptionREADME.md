@@ -19,3 +19,17 @@ There are mainly two types of exceptions: **checked** and **unchecked**. An erro
 
 3. **Error:**
    Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.
+
+## Catching Exceptions
+
+Syntax:
+A method catches an exception using a combination of the **try** and **catch** keywords. A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code, and the syntax for using try/catch looks like the following −
+
+```java
+   try{
+   //Protected code
+   }catch(Exception e){
+   //catch block
+   }
+
+```
