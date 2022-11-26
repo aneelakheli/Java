@@ -32,8 +32,9 @@ The core advantage of exception handling is to maintain the **normal flow** of t
 
 ## Catching Exceptions
 
-Syntax:
 A method catches an exception using a combination of the **try** and **catch** keywords. A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code, and the syntax for using try/catch looks like the following −
+
+Syntax:
 
 ```java
    try{
@@ -42,4 +43,27 @@ A method catches an exception using a combination of the **try** and **catch** k
    //catch block
    }
 
+```
+
+Here, we have placed the code that might generate an exception inside the try block. Every try block is followed by a catch block.
+When an exception occurs, it is caught by the catch block. The catch block cannot be used without the try block.
+
+## **Finally** block
+
+In Java, the finally block is always executed no matter whether there is an exception or not.
+The finally block is optional. And, for each try block, there can be only one finally block.
+The basic syntax of finally block is:
+
+syntax:
+
+```java
+try {
+//code
+}
+catch (ExceptionType1 e1) {
+// catch block
+}
+finally {
+// finally block always executes
+}
 ```
