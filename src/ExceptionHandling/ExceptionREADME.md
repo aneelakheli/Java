@@ -54,6 +54,11 @@ In Java, the finally block is always executed no matter whether there is an exce
 The finally block is optional. And, for each try block, there can be only one finally block.
 The basic syntax of finally block is:
 
+**Important of finally Block**
+
+- **Finally** block in Java can be used to put "cleanup" code such as closing a file, closing connection, etc.
+- The important statements to be printed can be placed in the finally block.
+
 syntax:
 
 ```java
