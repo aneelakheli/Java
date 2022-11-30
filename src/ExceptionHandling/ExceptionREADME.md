@@ -120,3 +120,7 @@ catch(exception e){
 
 The Java throw keyword is used to throw an exception explicitly. We specify the exception object which is to be thrown. The Exception has some message with it that provides the error description. These exceptions may be related to user inputs, server, etc.
 We can throw either checked or unchecked exceptions in Java by _throw_ keyword. It is mainly used to throw a custom exception. We will discuss custom exceptions later in this section.
+
+**Note**: _If we throw unchecked exception from a method, it is must to handle the exception or declare in throws clause._
+
+**Note**: _Every subclass of Error and RuntimeException is an unchecked exception in Java. A checked exception is everything else under the Throwable class._
