@@ -8,11 +8,11 @@ An exception (or exceptional event) is a problem that arises during the executio
 There are mainly two types of exceptions: **checked** and **unchecked**. An error is considered as the unchecked exception. However, according to Oracle, there are three types of exceptions namely:
 
 1. **Checked Exception:**
-   The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time.
+   The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions. For example, IOException, SQLException, etc. Checked exceptions are checked at _compile-time_.
 
 2. **Unchecked Exception:**
    The classes that inherit the RuntimeException are known as unchecked exceptions. For example, ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, etc.
-   These exceptions are not checked at compile-time but run-time. Some of the common runtime exceptions are:
+   These exceptions are not checked at compile-time but at _run-time_. Some of the common runtime exceptions are:
    Improper use of an API - IllegalArgumentException
    Null pointer access (missing the initialization of a variable) - NullPointerException
    Out-of-bounds array access - ArrayIndexOutOfBoundsException
@@ -124,3 +124,25 @@ We can throw either checked or unchecked exceptions in Java by _throw_ keyword. 
 **Note**: _If we throw unchecked exception from a method, it is must to handle the exception or declare in throws clause._
 
 **Note**: _Every subclass of Error and RuntimeException is an unchecked exception in Java. A checked exception is everything else under the Throwable class._
+
+## Java Exception Propagation
+
+An exception is first thrown from the top of the stack and if it is not caught, it drops down the call stack to the previous method. If not caught there, the exception again drops down to the previous method, and so on until they are caught or until they reach the very bottom of the call stack. This is called exception propagation.
+
+_**Note**: By default Unchecked Exceptions are forwarded in calling chain (propagated)_.
+
+_**Note**: By default, Checked Exceptions are not forwarded in calling chain (propagated)_.
+
+## Java Throws keyword
+
+The java **throws** keyword is used to declare an exception. It gives an information to the programmer that there may occur an exception. So, it is better for the programmer to provide the exception handling code so that the normal flow of the program can be maintained.
+
+Exception Handling is mainly used to handle the checked exceptions. If there occurs any unchecked exception such as NullPointerException, it is programmers' fault that he is not checking the code before it being used.
+
+Syntax:
+
+```java
+return_type method_name() throws exception_class_name{
+//method code
+}
+```
