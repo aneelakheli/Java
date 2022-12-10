@@ -12,4 +12,29 @@ The **Object** is the superclass of all other classes, and Object reference can 
 
 **Generics Class:** A generics class is implemented exactly like a non-generic class. The only difference is that it contains a type parameter section. There can be more than one type of parameter, separated by a comma. The classes, which accept one or more parameters, are known as parameterized classes or parameterized types.
 
-**_Note: In parameter type we can not use primitives like 'int', 'char' or 'double'._**
+**\_Note: In parameter type we can not use primitives like '**int**', '**char**' or '**double**'.\_**
+
+**Generics Works only with Reference Types**
+
+When we declare an instance of a generic type, the type argument passed to the type parameter must be a reference type. We _cannot_ use **primitive data types** like **int**, **char**.
+
+```java
+Test<int> obj = new Test<int>(20);
+```
+
+The above line results in a compile-time error that can be resolved using type _wrappers_ to encapsulate a primitive type.
+
+But primitive type arrays can be passed to the type parameter because arrays are reference types.
+
+```java
+ArrayList<int[]> a = new ArrayList<>();
+```
+
+**Type Parameters in Java Generics:**
+The type parameters naming conventions are important to learn generics thoroughly. The common type parameters are as follows:
+
+T – Type
+E – Element
+K – Key
+N – Number
+V – Value
