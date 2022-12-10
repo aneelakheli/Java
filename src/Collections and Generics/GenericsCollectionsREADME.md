@@ -8,7 +8,12 @@ The **Object** is the superclass of all other classes, and Object reference can 
 
 ## Types of Java Generics
 
-**Generics Method:** Generics java method takes a parameters and returns some value after performing a task. it is exactly like a normal function, however, a generic method has type parameters that are cited by actual type. This allow the generic method to be used in a more general way. The compiler take care of the type of safety which enables programmers to code easily since they do not have to perform long, individual type castings.
+**Generics Method:** Generics java method takes a parameters and returns some value after performing a task. it is exactly like a normal function, however, a generic method has type parameters that are cited by actual type. This allow the generic method to be used in a more general way. The compiler take care of the type of safety which enables programmers to code easily since they do not have to perform long, individual type castings.Following are the rules to define Generics Methods:
+
+- All generic method declarations have a type parameter section delimited by angle brackets (< and >) that precedes the method's return type ( < E > in the next example).
+- Each type parameter section contains one or more type parameters separated by commas. A type parameter, also known as a type variable, is an identifier that specifies a generic type name.
+- The type parameters can be used to declare the return type and act as placeholders for the types of the arguments passed to the generic method, which are known as actual type arguments.
+- A generic method's body is declared like that of any other method. Note that type parameters can represent only reference types, not primitive types (like int, double and char).
 
 **Generics Class:** A generics class is implemented exactly like a non-generic class. The only difference is that it contains a type parameter section. There can be more than one type of parameter, separated by a comma. The classes, which accept one or more parameters, are known as parameterized classes or parameterized types.
 
