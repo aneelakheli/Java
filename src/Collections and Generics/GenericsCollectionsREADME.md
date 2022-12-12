@@ -36,10 +36,23 @@ ArrayList<int[]> a = new ArrayList<>();
 ```
 
 **Type Parameters in Java Generics:**
-The type parameters naming conventions are important to learn generics thoroughly. The common type parameters are as follows:
+By convention, type parameter names are single, uppercase letters. The type parameters naming conventions are important to learn generics thoroughly. The common type parameters are as follows:
 
+E – Element (used extensively by the Java Collections Framework)
 T – Type
-E – Element
 K – Key
 N – Number
 V – Value
+S,U,V etc. - 2nd, 3rd, 4th types
+
+```
+
+_Type Parameter and Type Argument Terminology_: Many developers use the terms "type parameter" and "type argument" interchangeably, but these terms are not the same. When coding, one provides type arguments in order to create a parameterized type. Therefore, the T in Foo<T> is a type parameter and the String in Foo<String> f is a type argument. This lesson observes this definition when using these terms.
+```
+
+### Advantages of Generics:
+
+Programs that use Generics has got many benefits over non-generic code.
+
+- **Code Reuse**: We can write a method/class/interface once and use it for any type we want.
+- **Type Safety**: Generics make errors to appear compile time than at run time (It’s always better to know problems in your code at compile time rather than making your code fail at run time). Suppose you want to create an ArrayList that store name of students, and if by mistake the programmer adds an integer object instead of a string, the compiler allows it. But, when we retrieve this data from ArrayList, it causes problems at runtime.
