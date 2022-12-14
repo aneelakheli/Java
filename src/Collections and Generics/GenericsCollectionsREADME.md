@@ -17,7 +17,7 @@ The **Object** is the superclass of all other classes, and Object reference can 
 
 **Generics Class:** A generics class is implemented exactly like a non-generic class. The only difference is that it contains a type parameter section. There can be more than one type of parameter, separated by a comma. The classes, which accept one or more parameters, are known as parameterized classes or parameterized types.
 
-**\_Note: In parameter type we can not use primitives like '**int**', '**char**' or '**double**'.\_**
+**Note: In parameter type we can not use primitives like '_int_', '_char_' or '_double_'.**
 
 **Generics Works only with Reference Types**
 
@@ -47,7 +47,7 @@ S,U,V etc. - 2nd, 3rd, 4th types
 
 ```
 
-_Type Parameter and Type Argument Terminology_: Many developers use the terms "type parameter" and "type argument" interchangeably, but these terms are not the same. When coding, one provides type arguments in order to create a parameterized type. Therefore, the T in Foo<T> is a type parameter and the String in Foo<String> f is a type argument. This lesson observes this definition when using these terms.
+__Type Parameter and Type Argument Terminology__: Many developers use the terms "type parameter" and "type argument" interchangeably, but these terms are not the same. When coding, one provides type arguments in order to create a parameterized type. Therefore, the T in Foo<T> is a type parameter and the String in Foo<String> f is a type argument. This lesson observes this definition when using these terms.
 ```
 
 ### Advantages of Generics:
