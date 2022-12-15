@@ -38,14 +38,13 @@ ArrayList<int[]> a = new ArrayList<>();
 **Type Parameters in Java Generics:**
 By convention, type parameter names are single, uppercase letters. The type parameters naming conventions are important to learn generics thoroughly. The common type parameters are as follows:
 
-E – Element (used extensively by the Java Collections Framework)
-T – Type
-K – Key
-N – Number
-V – Value
-S,U,V etc. - 2nd, 3rd, 4th types
-
 ```
+- E – Element (used extensively by the Java Collections Framework)
+- T – Type
+- K – Key
+- N – Number
+- V – Value
+- S,U,V etc. - 2nd, 3rd, 4th types
 
 __Type Parameter and Type Argument Terminology__: Many developers use the terms "type parameter" and "type argument" interchangeably, but these terms are not the same. When coding, one provides type arguments in order to create a parameterized type. Therefore, the T in Foo<T> is a type parameter and the String in Foo<String> f is a type argument. This lesson observes this definition when using these terms.
 ```
