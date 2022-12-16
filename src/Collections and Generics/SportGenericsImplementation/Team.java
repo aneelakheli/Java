@@ -52,15 +52,15 @@ public int ranking(){
     return (won *2 )+ tied;
 }
 
-// @Override
-// public int compareTo(Team<T> team){
-//     if(this.ranking()>team.ranking()){
-//         return -1;
-//     }
-//     else if(this.ranking()<team.ranking()){
-//         return 1;
-//     }else{
-//     return 0;
-//     }
-// }
+@Override
+public int compareTo(Team<T> team){
+    if(this.ranking()>team.ranking()){
+        return -1;
+    }
+    else if(this.ranking()<team.ranking()){
+        return 1;
+    }else{
+    return 0;
+    }
+}
 }
