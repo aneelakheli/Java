@@ -55,3 +55,7 @@ Programs that use Generics has got many benefits over non-generic code.
 
 - **Code Reuse**: We can write a method/class/interface once and use it for any type we want.
 - **Type Safety**: Generics make errors to appear compile time than at run time (It’s always better to know problems in your code at compile time rather than making your code fail at run time). Suppose you want to create an ArrayList that store name of students, and if by mistake the programmer adds an integer object instead of a string, the compiler allows it. But, when we retrieve this data from ArrayList, it causes problems at runtime.
+
+# Collection in Java
+
+A **Collection** represents a single unit of objects, i.e., a group.
