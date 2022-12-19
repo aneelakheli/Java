@@ -70,5 +70,7 @@ Framework in Java:
 
 Collection id a framework that represents a unified architecture for storing and manipulating a group of objects. It has:
 
-1. Interfaces and it's implementation, i.e, classes
-2. Algorithms
+1. **Interfaces:**
+   Interfaces are abstract data types that represent collections. They allow collections to be manipulated independently of the details of their representation. In object-oriented languages, interfaces generally form a hierarchy.
+2. **Implementation:**These are the concrete implementations of the collection interfaces. In essence, they are reusable data structures.
+3. **Algorithms:**These are the methods that perform useful computations, such as searching and sorting, on objects that implement collection interfaces. The algorithms are said to be polymorphic: that is, the same method can be used on many different implementations of the appropriate collection interface. In essence, algorithms are reusable functionality.
