@@ -59,3 +59,18 @@ Programs that use Generics has got many benefits over non-generic code.
 # Collection in Java
 
 A **Collection** represents a single unit of objects, i.e., a group.
+
+The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects. Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion. Java Collection framework provides many interfaces (Set, List, Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet).
+
+Framework in Java:
+
+- It provides readymade architecture.
+- It represent a set of classes and interfaces.
+- It is optional.
+
+Collection id a framework that represents a unified architecture for storing and manipulating a group of objects. It has:
+
+1. **Interfaces:**
+   Interfaces are abstract data types that represent collections. They allow collections to be manipulated independently of the details of their representation. In object-oriented languages, interfaces generally form a hierarchy.
+2. **Implementation:**These are the concrete implementations of the collection interfaces. In essence, they are reusable data structures.
+3. **Algorithms:**These are the methods that perform useful computations, such as searching and sorting, on objects that implement collection interfaces. The algorithms are said to be polymorphic: that is, the same method can be used on many different implementations of the appropriate collection interface. In essence, algorithms are reusable functionality.
