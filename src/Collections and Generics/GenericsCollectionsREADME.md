@@ -74,3 +74,9 @@ Collection id a framework that represents a unified architecture for storing and
    Interfaces are abstract data types that represent collections. They allow collections to be manipulated independently of the details of their representation. In object-oriented languages, interfaces generally form a hierarchy.
 2. **Implementation:**These are the concrete implementations of the collection interfaces. In essence, they are reusable data structures.
 3. **Algorithms:**These are the methods that perform useful computations, such as searching and sorting, on objects that implement collection interfaces. The algorithms are said to be polymorphic: that is, the same method can be used on many different implementations of the appropriate collection interface. In essence, algorithms are reusable functionality.
+
+## Hierarchy of Collection Framework.
+
+Hierarchy of Collection framework. The **java.util** package contains all the classes and interfaces for the Collection framework.
+
+![Collection framworks](/src/Images/collectionframework.jpg " Hierarchy of Collection framework.")
