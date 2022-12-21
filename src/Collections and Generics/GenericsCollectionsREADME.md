@@ -80,3 +80,15 @@ Collection id a framework that represents a unified architecture for storing and
 Hierarchy of Collection framework. The **java.util** package contains all the classes and interfaces for the Collection framework.
 
 ![Collection framworks](/src/Images/collectionframework.jpg " Hierarchy of Collection framework.")
+
+## ArrayList:
+
+The **ArrayList** class implements the _List_ interface. It uses a dynamic array to store the duplicate element of different data types. The ArrayList class maintains the insertion order and is non-synchronized. The elements stored in the ArrayList class can be randomly accessed.
+
+## LinkedList:
+
+LinkedList implements the Collection interface. It uses a doubly linked list internally to store the elements. It can store the duplicate elements. It maintains the insertion order and is not synchronized. In LinkedList, the manipulation is fast because no shifting is required.
+
+## Vector:
+
+Vector uses a dynamic array to store the data elements. It is similar to ArrayList. However, It is synchronized and contains many methods that are not the part of Collection framework.
