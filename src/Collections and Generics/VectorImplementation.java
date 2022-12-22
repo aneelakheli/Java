@@ -11,7 +11,7 @@ public class VectorImplementation {
         Iterator<String> itr =  v.iterator();
 
         while(itr.hasNext()){
-            System.out.println(itr.next());
+            System.out.println(itr.next()); 
         }
     }
     
