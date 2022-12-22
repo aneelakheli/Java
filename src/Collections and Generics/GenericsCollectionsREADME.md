@@ -92,3 +92,22 @@ LinkedList implements the Collection interface. It uses a doubly linked list int
 ## Vector:
 
 Vector uses a dynamic array to store the data elements. It is similar to ArrayList. However, It is synchronized and contains many methods that are not the part of Collection framework.
+
+## TreeSet:
+
+TreeSet class implements the Set interface that uses a tree for storage. It inherits AbstractSet class and implements the NavigableSet interface. The objects of the TreeSet class are stored in ascending order.
+
+The important points about the Java TreeSet class are:
+
+Java TreeSet class contains unique elements only like HashSet.
+
+> Java TreeSet class access and retrieval times are quiet fast.
+> Java TreeSet class doesn't allow null element.
+> Java TreeSet class is non synchronized.
+> Java TreeSet class maintains ascending order.
+> Java TreeSet class contains unique elements only like HashSet.
+> Java TreeSet class access and retrieval times are quite fast.
+> Java TreeSet class doesn't allow null elements.
+> Java TreeSet class is non-synchronized.
+> Java TreeSet class maintains ascending order.
+> The TreeSet can only allow those generic types that are comparable. For example The Comparable interface is being implemented by the StringBuffer class.
